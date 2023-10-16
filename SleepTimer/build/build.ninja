@@ -1,0 +1,245 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: SleepTimer
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/bastien/Desktop/SleepTimer/build/
+# =============================================================================
+# Object build statements for EXECUTABLE target SleepTimer
+
+
+#############################################
+# Order-only phony target for SleepTimer
+
+build cmake_object_order_depends_target_SleepTimer: phony || SleepTimer_autogen SleepTimer_autogen/mocs_compilation.cpp SleepTimer_autogen/timestamp SleepTimer_autogen_timestamp_deps
+
+build CMakeFiles/SleepTimer.dir/SleepTimer_autogen/mocs_compilation.cpp.o: CXX_COMPILER__SleepTimer_Debug /Users/bastien/Desktop/SleepTimer/build/SleepTimer_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_SleepTimer
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/SleepTimer.dir/SleepTimer_autogen/mocs_compilation.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -std=gnu++17
+  INCLUDES = -I/Users/bastien/Desktop/SleepTimer/build/SleepTimer_autogen/include -isystem /Users/bastien/Qt/6.6.0/macos/lib/QtCore.framework/Headers -iframework /Users/bastien/Qt/6.6.0/macos/lib -isystem /Users/bastien/Qt/6.6.0/macos/mkspecs/macx-clang -isystem /Users/bastien/Qt/6.6.0/macos/include -isystem /Users/bastien/Qt/6.6.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/bastien/Qt/6.6.0/macos/lib/QtGui.framework/Headers
+  OBJECT_DIR = CMakeFiles/SleepTimer.dir
+  OBJECT_FILE_DIR = CMakeFiles/SleepTimer.dir/SleepTimer_autogen
+
+build CMakeFiles/SleepTimer.dir/main.cpp.o: CXX_COMPILER__SleepTimer_Debug /Users/bastien/Desktop/SleepTimer/main.cpp || cmake_object_order_depends_target_SleepTimer
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/SleepTimer.dir/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -std=gnu++17
+  INCLUDES = -I/Users/bastien/Desktop/SleepTimer/build/SleepTimer_autogen/include -isystem /Users/bastien/Qt/6.6.0/macos/lib/QtCore.framework/Headers -iframework /Users/bastien/Qt/6.6.0/macos/lib -isystem /Users/bastien/Qt/6.6.0/macos/mkspecs/macx-clang -isystem /Users/bastien/Qt/6.6.0/macos/include -isystem /Users/bastien/Qt/6.6.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/bastien/Qt/6.6.0/macos/lib/QtGui.framework/Headers
+  OBJECT_DIR = CMakeFiles/SleepTimer.dir
+  OBJECT_FILE_DIR = CMakeFiles/SleepTimer.dir
+
+build CMakeFiles/SleepTimer.dir/sleeptimer.cpp.o: CXX_COMPILER__SleepTimer_Debug /Users/bastien/Desktop/SleepTimer/sleeptimer.cpp || cmake_object_order_depends_target_SleepTimer
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/SleepTimer.dir/sleeptimer.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -std=gnu++17
+  INCLUDES = -I/Users/bastien/Desktop/SleepTimer/build/SleepTimer_autogen/include -isystem /Users/bastien/Qt/6.6.0/macos/lib/QtCore.framework/Headers -iframework /Users/bastien/Qt/6.6.0/macos/lib -isystem /Users/bastien/Qt/6.6.0/macos/mkspecs/macx-clang -isystem /Users/bastien/Qt/6.6.0/macos/include -isystem /Users/bastien/Qt/6.6.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/bastien/Qt/6.6.0/macos/lib/QtGui.framework/Headers
+  OBJECT_DIR = CMakeFiles/SleepTimer.dir
+  OBJECT_FILE_DIR = CMakeFiles/SleepTimer.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target SleepTimer
+
+
+#############################################
+# Link the executable SleepTimer.app/Contents/MacOS/SleepTimer
+
+build SleepTimer.app/Contents/MacOS/SleepTimer: CXX_EXECUTABLE_LINKER__SleepTimer_Debug CMakeFiles/SleepTimer.dir/SleepTimer_autogen/mocs_compilation.cpp.o CMakeFiles/SleepTimer.dir/main.cpp.o CMakeFiles/SleepTimer.dir/sleeptimer.cpp.o | /Users/bastien/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/bastien/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/QtGui /Users/bastien/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/QtCore || SleepTimer_autogen SleepTimer_autogen_timestamp_deps
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6
+  LINK_LIBRARIES = -Wl,-rpath,/Users/bastien/Qt/6.6.0/macos/lib  /Users/bastien/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets  /Users/bastien/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/QtGui  /Users/bastien/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/QtCore  -framework IOKit  -framework DiskArbitration  -Xlinker -framework -Xlinker OpenGL  -Xlinker -framework -Xlinker AGL  -framework AppKit  -framework ImageIO  -framework Metal
+  LINK_PATH = -F/Users/bastien/Qt/6.6.0/macos/lib
+  OBJECT_DIR = CMakeFiles/SleepTimer.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = SleepTimer.app/Contents/MacOS/SleepTimer
+  TARGET_PDB = SleepTimer.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/bastien/Desktop/SleepTimer/build && /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/bin/ccmake -S/Users/bastien/Desktop/SleepTimer -B/Users/bastien/Desktop/SleepTimer/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/bastien/Desktop/SleepTimer/build && /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/bin/cmake --regenerate-during-build -S/Users/bastien/Desktop/SleepTimer -B/Users/bastien/Desktop/SleepTimer/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/bastien/Desktop/SleepTimer/build && /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/bastien/Desktop/SleepTimer/build && /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/bastien/Desktop/SleepTimer/build && /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+
+#############################################
+# Utility command for SleepTimer_autogen_timestamp_deps
+
+build SleepTimer_autogen_timestamp_deps: phony CMakeFiles/SleepTimer_autogen_timestamp_deps
+
+
+#############################################
+# Utility command for SleepTimer_autogen
+
+build SleepTimer_autogen: phony CMakeFiles/SleepTimer_autogen SleepTimer_autogen/include/ui_sleeptimer.h SleepTimer_autogen/timestamp SleepTimer_autogen/mocs_compilation.cpp SleepTimer_autogen_timestamp_deps
+
+
+#############################################
+# Custom command for SleepTimer_autogen/timestamp
+
+build SleepTimer_autogen/timestamp SleepTimer_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}SleepTimer_autogen/timestamp ${cmake_ninja_workdir}SleepTimer_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /Users/bastien/Qt/6.6.0/macos/./libexec/moc /Users/bastien/Qt/6.6.0/macos/./libexec/uic || SleepTimer_autogen_timestamp_deps
+  COMMAND = cd /Users/bastien/Desktop/SleepTimer/build && /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E cmake_autogen /Users/bastien/Desktop/SleepTimer/build/CMakeFiles/SleepTimer_autogen.dir/AutogenInfo.json Debug && /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E touch /Users/bastien/Desktop/SleepTimer/build/SleepTimer_autogen/timestamp && /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /Users/bastien/Desktop/SleepTimer /Users/bastien/Desktop/SleepTimer /Users/bastien/Desktop/SleepTimer/build /Users/bastien/Desktop/SleepTimer/build /Users/bastien/Desktop/SleepTimer/build/SleepTimer_autogen/deps /Users/bastien/Desktop/SleepTimer/build/CMakeFiles/d/3df49591ab558ccffa363ed1d066be2af787ee60966f0ddee47dcbe2bf907b9c.d
+  DESC = Automatic MOC and UIC for target SleepTimer
+  depfile = /Users/bastien/Desktop/SleepTimer/build/CMakeFiles/d/3df49591ab558ccffa363ed1d066be2af787ee60966f0ddee47dcbe2bf907b9c.d
+  restat = 1
+
+
+#############################################
+# Phony custom command for CMakeFiles/SleepTimer_autogen_timestamp_deps
+
+build CMakeFiles/SleepTimer_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/SleepTimer_autogen_timestamp_deps: phony /Users/bastien/Qt/6.6.0/macos/./libexec/moc /Users/bastien/Qt/6.6.0/macos/./libexec/uic /Users/bastien/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/QtCore /Users/bastien/Qt/6.6.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets
+
+
+#############################################
+# Phony custom command for CMakeFiles/SleepTimer_autogen
+
+build CMakeFiles/SleepTimer_autogen SleepTimer_autogen/include/ui_sleeptimer.h | ${cmake_ninja_workdir}CMakeFiles/SleepTimer_autogen ${cmake_ninja_workdir}SleepTimer_autogen/include/ui_sleeptimer.h: phony SleepTimer_autogen/timestamp || SleepTimer_autogen_timestamp_deps
+
+# =============================================================================
+# Target aliases.
+
+build SleepTimer: phony SleepTimer.app/Contents/MacOS/SleepTimer
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/bastien/Desktop/SleepTimer/build
+
+build all: phony SleepTimer.app/Contents/MacOS/SleepTimer
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | .qt/info_plist/SleepTimer/Info.plist .qtc/package-manager/auto-setup.cmake /Users/bastien/Desktop/SleepTimer/CMakeLists.txt /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/FindWrapAtomic.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/FindWrapOpenGL.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/Qt6Config.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/Qt6ConfigExtras.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/Qt6ConfigVersion.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/Qt6Dependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/Qt6Targets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/Qt6VersionlessTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtFeature.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtFeatureCommon.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicAppleHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicPluginHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicTargetHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicTestHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicToolHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/macos/Info.plist.app.in /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreMacros.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CorePlugins.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreVersionlessTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/QtInstallPaths.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBus/Qt6DBusConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBus/Qt6DBusDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBus/Qt6DBusMacros.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBus/Qt6DBusTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBus/Qt6DBusTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBus/Qt6DBusVersionlessTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsVersionlessTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiVersionlessTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeFindDependencyMacro.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CheckCXXCompilerFlag.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CheckCXXSourceCompiles.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CheckIncludeFileCXX.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CheckLibraryExists.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Clang.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/GNU.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/FindOpenGL.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/FindPackageMessage.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/FindThreads.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/GNUInstallDirs.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Internal/CheckCompilerFlag.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Internal/CheckFlagCommonConfig.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/MacroAddFileDependencies.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Darwin.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build .qt/info_plist/SleepTimer/Info.plist .qtc/package-manager/auto-setup.cmake /Users/bastien/Desktop/SleepTimer/CMakeLists.txt /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/FindWrapAtomic.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/FindWrapOpenGL.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/Qt6Config.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/Qt6ConfigExtras.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/Qt6ConfigVersion.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/Qt6Dependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/Qt6Targets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/Qt6VersionlessTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtFeature.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtFeatureCommon.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicAppleHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicPluginHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicTargetHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicTestHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicToolHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6/macos/Info.plist.app.in /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreMacros.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CorePlugins.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreVersionlessTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Core/QtInstallPaths.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBus/Qt6DBusConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBus/Qt6DBusDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBus/Qt6DBusMacros.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBus/Qt6DBusTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBus/Qt6DBusTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBus/Qt6DBusVersionlessTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsVersionlessTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiVersionlessTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake /Users/bastien/Qt/6.6.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeFindDependencyMacro.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CheckCXXCompilerFlag.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CheckCXXSourceCompiles.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CheckIncludeFileCXX.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CheckLibraryExists.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Clang.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/GNU.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/FindOpenGL.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/FindPackageMessage.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/FindThreads.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/GNUInstallDirs.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Internal/CheckCompilerFlag.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Internal/CheckFlagCommonConfig.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/MacroAddFileDependencies.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Darwin.cmake /Users/bastien/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean additional files.
+
+build CMakeFiles/clean.additional: CLEAN_ADDITIONAL
+  CONFIG = Debug
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN CMakeFiles/clean.additional
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

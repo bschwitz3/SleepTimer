@@ -24,5 +24,6 @@ private:
     Ui::SleepTimer *ui;
 private slots:
     void startShutdown(); // Ajouter la déclaration de la fonction pour démarrer l'extinction
+    void updateTimeLabel(int value);
 };
 #endif // SLEEPTIMER_H

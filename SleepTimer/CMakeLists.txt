@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.5)
 
 project(SleepTimer VERSION 0.1 LANGUAGES CXX)
 
+# Définir le répertoire de build à la racine du projet
+set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR})
+
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)

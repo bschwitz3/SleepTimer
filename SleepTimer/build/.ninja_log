@@ -1,0 +1,11 @@
+# ninja log v5
+668	756	1697410311383157493	SleepTimer.app/Contents/MacOS/SleepTimer	6ba9a7339e7c3ef6
+566	1364	1697410129303940542	CMakeFiles/SleepTimer.dir/main.cpp.o	1403da74a4989fb
+53	668	1697410311292747945	CMakeFiles/SleepTimer.dir/sleeptimer.cpp.o	96bf7e118a80d837
+14	48	1697410310677030197	/Users/bastien/Desktop/SleepTimer/build/SleepTimer_autogen/mocs_compilation.cpp	aa9341900b8c230b
+14	48	1697410310677030197	/Users/bastien/Desktop/SleepTimer/build/SleepTimer_autogen/timestamp	aa9341900b8c230b
+14	48	1697410310677030197	SleepTimer_autogen/timestamp	aa9341900b8c230b
+14	48	1697410310677030197	SleepTimer_autogen/mocs_compilation.cpp	aa9341900b8c230b
+10	14	0	clean	123e0903475b16de
+1	10	0	CMakeFiles/clean.additional	eae5c68b0737aacd
+566	1363	1697410129303934292	CMakeFiles/SleepTimer.dir/SleepTimer_autogen/mocs_compilation.cpp.o	7f4cd5f9b7b5416c
