@@ -37,7 +37,7 @@ public:
         QFont font;
         font.setFamilies({QString::fromUtf8("Academy Engraved LET")});
         SleepTimer->setFont(font);
-        SleepTimer->setStyleSheet(QString::fromUtf8("background-color: rgb(28, 88, 162);"));
+        SleepTimer->setStyleSheet(QString::fromUtf8("background-color: rgb(102, 178, 255);"));
         label_image = new QLabel(SleepTimer);
         label_image->setObjectName("label_image");
         label_image->setGeometry(QRect(400, 0, 150, 150));

@@ -19,7 +19,7 @@
    <string>SleepTimer</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(28, 88, 162);</string>
+   <string notr="true">background-color: rgb(102, 178, 255);</string>
   </property>
   <widget class="QLabel" name="label_image">
    <property name="geometry">

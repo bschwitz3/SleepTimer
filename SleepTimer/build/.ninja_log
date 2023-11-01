@@ -9,3 +9,11 @@
 10	14	0	clean	123e0903475b16de
 1	10	0	CMakeFiles/clean.additional	eae5c68b0737aacd
 566	1363	1697410129303934292	CMakeFiles/SleepTimer.dir/SleepTimer_autogen/mocs_compilation.cpp.o	7f4cd5f9b7b5416c
+14	485	1698354260185031000	SleepTimer_autogen/timestamp	7821fbc998685e2f
+14	485	1698354260185031000	SleepTimer_autogen/mocs_compilation.cpp	7821fbc998685e2f
+14	485	1698354260185031000	/Users/bastien/Desktop/SleepTimer/build/SleepTimer_autogen/timestamp	7821fbc998685e2f
+14	485	1698354260185031000	/Users/bastien/Desktop/SleepTimer/build/SleepTimer_autogen/mocs_compilation.cpp	7821fbc998685e2f
+485	1202	1698354260902470402	CMakeFiles/SleepTimer.dir/SleepTimer_autogen/mocs_compilation.cpp.o	2d09c224adae852a
+486	1203	1698354260902469319	CMakeFiles/SleepTimer.dir/main.cpp.o	3938e1ff731091a0
+486	1244	1698354260943059333	CMakeFiles/SleepTimer.dir/sleeptimer.cpp.o	92417b87c8768d0a
+1244	2630	1698354262334553531	SleepTimer.app/Contents/MacOS/SleepTimer	1a85e0e4ff3b4cd3

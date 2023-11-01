@@ -4,6 +4,8 @@
 /Users/bastien/Desktop/SleepTimer/main.cpp
 /Users/bastien/Desktop/SleepTimer/sleeptimer.h
  mmc:Q_OBJECT
+ mdp:/Users/bastien/Desktop/SleepTimer/sleeptimer.h
+ mdp:/Users/bastien/Desktop/SleepTimer/build/SleepTimer_autogen/moc_predefs.h
  mdp:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h
  mdp:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h
  mdp:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h
@@ -687,8 +689,6 @@
  mdp:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/qos.h
  mdp:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/time.h
  mdp:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdarg.h
- mdp:/Users/bastien/Desktop/SleepTimer/build/SleepTimer_autogen/moc_predefs.h
- mdp:/Users/bastien/Desktop/SleepTimer/sleeptimer.h
  mdp:/Users/bastien/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/QProcess
  mdp:/Users/bastien/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/QTimer
  mdp:/Users/bastien/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/q20functional.h
